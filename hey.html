@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="ja">
+<head>
+<meta charset="SHIFT-JIS"/>
+<title>html5最小テンプレート</title>
+</head>
+<body>
+<canvas id="canvassample1"width="140" height="140"></canvas>
+<script type="text/javascript">
+<!--
+onload = function() {
+ draw1();
+};
+function draw1(){
+	var canvas =document.getElementById('canvassample1');
+	if( ! canvas || ! canvas.getContext ){return false;}
+		var ctx = canvas.getContext('2d');
+		ctx.rect(20,20,100,100);
+		ctx.stroke();
+
+	canvas.addEventListener(
+		"mousedown",
+		function(e){
+		ctx.rect(30,30,50,50);
+		ctx.stroke();
+		});
+		
+}
+</script>
+<header><h1>html5最小テンプレート</h1></header>
+<nav><ul><li><a href="./">Home</a></li></ul></nav>
+<article>
+<h2>html5の最低限テンプレート</h2>
+<p>html5の最低限テンプレートになります。</p>
+</article>
+<footer><a href="./">html5最少テンプレート</a></footer>
+</body></html>
